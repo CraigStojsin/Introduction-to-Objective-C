@@ -12,37 +12,31 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         
-        //Arithmatic Section
-        
-        NSLog(@"6 + 2 = %d",6 + 2); //8
-        
-        NSLog(@"6 - 2 =%d", 6 - 2); //4
-        
-        NSLog(@"6 * 2 =%d", 6 * 2); //12
-        
-        NSLog(@"6 / 2 =%d", 6 / 2); //3
-        
-        NSLog(@"6 %% 2 =%d",6 % 2);// 0
+        //Conditional Section
         
         
         
+        int modelYear = 1990;// set the integer
         
+        if (modelYear < 1967) {// create the first condition
+            
+            NSLog(@"That car is an antique!!!");// create the first statement
+            
+        } else if (modelYear <= 1991) {
+            
+            NSLog(@"That car is a classic!");
+            
+        } else if (modelYear == 2013) {
+            
+            NSLog(@"That's a brand new car!");
+            
+        } else {
+            
+            NSLog(@"There's nothing special about that car.");
         
-        int i = 0;
-        
-        NSLog(@"=%d", i);    // 0
-        
-        i += 5;
-        
-        NSLog(@"%d", i);    // 1
-        
-        i++;
-        
-        NSLog(@"%d", i);    // 2
-        
-        
-        
-
+        }
+    
+    }
     
     return 0;
-}
+    }
