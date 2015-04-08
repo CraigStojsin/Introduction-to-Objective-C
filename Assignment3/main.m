@@ -10,12 +10,39 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //Constant Section
         
-        double const pi = 3.14159;
         
-        pi = 42001.0;               // Compiler error
+        //Arithmatic Section
         
+        NSLog(@"6 + 2 = %d",6 + 2); //8
+        
+        NSLog(@"6 - 2 =%d", 6 - 2); //4
+        
+        NSLog(@"6 * 2 =%d", 6 * 2); //12
+        
+        NSLog(@"6 / 2 =%d", 6 / 2); //3
+        
+        NSLog(@"6 %% 2 =%d",6 % 2);// 0
+        
+        
+        
+        
+        
+        int i = 0;
+        
+        NSLog(@"=%d", i);    // 0
+        
+        i += 5;
+        
+        NSLog(@"%d", i);    // 1
+        
+        i++;
+        
+        NSLog(@"%d", i);    // 2
+        
+        
+        
+
     
     return 0;
 }
