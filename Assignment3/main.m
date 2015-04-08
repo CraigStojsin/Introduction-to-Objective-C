@@ -28,5 +28,36 @@ int main(int argc, const char * argv[]) {
         modelPointer++;
     }
     NSLog(@"The first letter is %c", *(modelPointer - 5));
+   //null pointer
+    int years = 1967;
+    int *pointer = &years;
+    NSLog(@"%d", *pointer);     // Do something with the value
+    pointer = NULL;             // Then invalidate it
+    //void pointer
+    int year1 = 1967;
+    void *genericPointer = &year1;
+    int *intPointer = (int *)genericPointer;
+    NSLog(@"%d", *intPointer);
+    
+    /*- (id)initWithBytes:(const void *)bytes
+length:(NSUInteger)length
+encoding:(NSStringEncoding)encoding*/
+    
+    NSString *moodel = @"Honda";
+    
+    NSString *anObject;    // An Objective-C object
+    anObject = NULL;       // This will work
+    anObject = nil;        // But this is preferred
+    int *aPointer;         // A plain old C pointer
+    aPointer = nil;        // Don't do this
+    aPointer = NULL;       // Do this instead
+    
+    
+    
+    
+    
+    
+    
+    
     return 0;
 }
