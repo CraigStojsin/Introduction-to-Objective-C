@@ -7,17 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-int main (int argc, const char * argv[]) {
-    @autoreleasepool {
-       
-        int a = 87;
-        int b = 15;
-        int c = a - b;
-        
-        NSLog(@"a - b, = %d", a - b);
-        NSLog(@"a minus b is equal to %d",c);
-    
-}
-    return 0;
+int main (int argc, const char *argv[]);
+(@autoreleasepool; {
 
+    
+    int sum = 0;
+    //COMPUTE RESULT
+    sum = 25 + 37 - 19
+    // DISPLAY RESULTS
+   Nslog(@"The answer is %i", sum);
+
+return 0;
 }
+
