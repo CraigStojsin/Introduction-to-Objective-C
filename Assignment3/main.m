@@ -10,13 +10,25 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //comment section
-        // This is an inline comment
+        //Variable Section
         
-        /* This is a block comment.
-         It can span multiple lines. */
         
-         
+        
+        double odometer = 9200.8;
+        
+        int odometerAsInteger = (int)odometer;
+        
+        
+        
+        NSLog(@"You've driven %.1f miles", odometer);        // 9200.8
+        
+        NSLog(@"You've driven %d miles", odometerAsInteger); // 9200
+        
+    }
+    
+
+        
+        
     
     return 0;
 }
