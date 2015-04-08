@@ -7,20 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
 int main (int argc, const char * argv[]) {
-    @autoreleasepool
-    {
+    @autoreleasepool {
+       
+        int a = 87;
+        int b = 15;
+        int c = a - b;
+        
+        NSLog(@"a - b, = %d", a - b);
+        NSLog(@"a minus b is equal to %d",c);
     
-        NSLog(@"This is my first day at bitmaker labs");
-    
-    
-    }
-    
-    
-    
-    
-    
-    
+}
     return 0;
+
 }
