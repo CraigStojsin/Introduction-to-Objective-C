@@ -6,92 +6,20 @@
 //  Copyright (c) 2015 Codes By Craig. All rights reserved.
 //
 
+
+            //Macro section
 #import <Foundation/Foundation.h>
+
+#define PI 3.14159
+#define RAD_TO_DEG(radians) (radians * (180.0 / PI))
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-       
-        int modelYear2 = 1990;
-        
-        //while loops
-        
-        
-        
-        int  a = 0;
-        
-        while (a<5){
-            
-            if (a == 3){
-                
-                NSLog(@"Aborting the while-loop");
-                
-                break;
-                
-            }
-            
-            
-            
-            NSLog(@"Current year: %d",modelYear2 + a);
-            
-            a++;
-            
-            
-            
-        }
-        
-        
-        
-        //for loops
-        
-        for (int a=0; a<5; a++) {
-            
-            if (a == 3) {
-                
-                NSLog(@"Skipping a for-loop iteration");
-                
-                continue;
-                
-            }
-            
-            NSLog(@"Current year: %d", modelYear2 + a);
-            
-            
-            
-            
-            
-            
-            
-        }
-        
-        
-        
-        
-        
-        // For-in loops ("Fast-enumetation, specific to Objective-C")
-        
-        
-        
-        NSArray* models = @[@"Ford",@"Honda",@"Nissan",@"Porshe"];
-        
-        for (id model in models) {
-            
-            NSLog(@"%@",model);
-            
-            
-            
-        }
-        
-        
-        
-        
+        double angle = PI / 2;              // 1.570795
+        NSLog(@"%f", RAD_TO_DEG(angle));    // 90.0
+    }
+    
 
-        
-      
-        
-        }
-    
-    
     
     return 0;
     }
