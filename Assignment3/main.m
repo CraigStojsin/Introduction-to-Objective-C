@@ -10,16 +10,17 @@
             //Macro section
 #import <Foundation/Foundation.h>
 
-#define PI 3.14159
-#define RAD_TO_DEG(radians) (radians * (180.0 / PI))
+typedef struct {
+    unsigned char red;
+    unsigned char green;
+    unsigned char blue;
+} Color;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        double angle = PI / 2;              // 1.570795
-        NSLog(@"%f", RAD_TO_DEG(angle));    // 90.0
+        Color carColor = {255, 160, 0};
+        NSLog(@"Your paint job is (R: %hhu, G: %hhu, B: %hhu)",
+              carColor.red, carColor.green, carColor.blue);
     }
-    
-
-    
     return 0;
-    }
+}
