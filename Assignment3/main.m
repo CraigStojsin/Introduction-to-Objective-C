@@ -11,32 +11,33 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        /*Operator description
+         
+         a == b  Equal to
+         
+         a != b  Not equal to
+         
+         a > b   Greater than
+         
+         a >= b  Greater than or equal to
+         
+         a < b   Less than
+         
+         a <= b  Less than or equal to
+         
+         !a  Logical negation
+         
+         a && b  Logical and
+         
+         a || b  Logical or */
         
-        //Conditional Section
+
         
-        
-        
-        int modelYear = 1990;// set the integer
-        
-        if (modelYear < 1967) {// create the first condition
-            
-            NSLog(@"That car is an antique!!!");// create the first statement
-            
-        } else if (modelYear <= 1991) {
-            
-            NSLog(@"That car is a classic!");
-            
-        } else if (modelYear == 2013) {
-            
-            NSLog(@"That's a brand new car!");
-            
-        } else {
-            
-            NSLog(@"There's nothing special about that car.");
+      
         
         }
     
-    }
+    
     
     return 0;
     }
